@@ -1,11 +1,11 @@
 #!/bin/sh
 
-# Script to automate the name change of a UAL mac
+# Script to automate the hostname change of a managed mac
 
 # Based on the work of Andrina Kelly
 # https://github.com/andrina/JNUC2013/blob/master/Users%20Do%20Your%20Job/ChangeComputerName.sh
 
-# Author  : r.purves@arts.ac.uk
+# Author  : contact@richard-purves.com
 # Version : 1.0 - 26-11-2013 - Initial Version
 
 # Set variables here
@@ -33,7 +33,7 @@ scutil --set HostName $COMPUTERNAME
 scutil --set LocalHostName $COMPUTERNAME
 scutil --set ComputerName $COMPUTERNAME
 
-# Rebind to UAL AD here
+# Rebind to AD here
 jamf bind -type ad \
      -domain ?.? \
      -username *replace* \
